@@ -8,7 +8,6 @@ $response = Http::post('https://trustline.co.ke/api/v2/payments', [
     'external_reference' => 'INV-99992',
     'callback_url' => 'https://example.com/callback.php',
 ]);
-
 if ($response->successful()) {
     // Handle successful response
     return $response->body();
